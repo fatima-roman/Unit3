@@ -3,13 +3,13 @@ package boletin1;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class EJ03 {
+public class EJ04 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
         // Inicializar la lista con un tamaño de 5 
-        double lista[] = new double[10];
+        double lista[] = new double[12];
 
         for (int i =1; i<= lista.length; i++) {
         	System.out.println("Introduce el número "+ i+ ":");
