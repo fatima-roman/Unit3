@@ -8,32 +8,29 @@ public class EJ05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-        // Inicializar la lista con un tamaño de 5 
-        double lista[] = new double[10];
-        int n =0; 
+		double[] lista = new double[10];
+		double n = 0;
 
-        for (int i =1; i<= lista.length; i++) {
-        	System.out.println("Introduce el número "+ i+ ":");
-        	lista[i-1]=sc.nextDouble();
-        }
-        
-        Arrays.sort(lista);
-        
-        
-        for (int i=0;i<=lista.length;i++) {
-        	n+= lista[i];
-        	if (lista[i] == lista[0]) {
-        		System.out.println("Número min: " + lista[i]);
-        	}else if (lista[i] == lista[9]) {
-        		System.out.println("Número max: " + lista[i]);
-        	}
-        }
-        
+		// Leer números
+		for (int i = 0; i < lista.length; i++) {
+		    System.out.println("Introduce el número " + (i + 1) + ":");
+		    lista[i] = sc.nextDouble();
+		}
 
-        // Imprimir lista
-        System.out.println("Suma de los números: "+n);
-        
-        sc.close();
+		// Ordenar
+		Arrays.sort(lista);
+
+		// Sumar y detectar min/max
+		for (int i = 0; i < lista.length; i++) {
+		    n += lista[i];
+		}
+
+		System.out.println("Número mínimo: " + lista[0]);
+		System.out.println("Número máximo: " + lista[lista.length - 1]);
+		System.out.println("Suma de los números: " + n);
+
+		sc.close();
+
 	}
 
 }
