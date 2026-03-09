@@ -93,9 +93,9 @@ public class modeloDeExmane02 {
 	    
 	    static String extraerMensajeOculto(String mensaje) {
 	        String sinEsp = quitarEspacios(mensaje);
-	        StringBuilder oculto = new StringBuilder();
+	        String oculto = "";
 	        for (int i = 0; i < sinEsp.length(); i += 2) {
-	            oculto.append(sinEsp.charAt(i));
+	            oculto += sinEsp.charAt(i);
 	        }
 	        return oculto.toString();
 	    }
