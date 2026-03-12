@@ -1,7 +1,6 @@
 package modelodeexamen;
 
 import java.util.Scanner;
-import java.util.Arrays; 
 
 public class modeloDeExmane02 {
 
